@@ -34,7 +34,7 @@ model = MultinomialNB()
 model.fit(X_dummy, y_dummy)
 
 # Guardar el modelo si no existe
-filename = '/content/modelo_naive_bayes.jb'
+filename = 'modelo_naive_bayes.jb'
 if not os.path.exists(filename):
     joblib.dump(model, filename)
 
