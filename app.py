@@ -4,9 +4,6 @@ from sklearn.naive_bayes import MultinomialNB
 import joblib
 import os
 
-# Crear un directorio si no existe
-if not os.path.exists('/content/'):
-    os.makedirs('/content/')
 
 # Definir los mapeos para las variables (debe coincidir con el entrenamiento)
 mapeo_horas_estudio = {"Alta": 1, "Baja": 0}
